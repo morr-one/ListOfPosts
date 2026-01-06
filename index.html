@@ -13,7 +13,6 @@
   >
 
   <style>
-    /* ===== GLOBAL ===== */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #0f172a;
@@ -56,6 +55,25 @@
       font-size: 1.2rem;
       max-width: 700px;
       margin: 1rem auto;
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn-tech {
+      color: #e5e7eb;
+      border: 2px solid #e5e7eb;
+      padding: 0.6rem 1.5rem;
+      border-radius: 30px;
+      margin: 0.3rem;
+      transition: all 0.3s ease;
+      background: transparent;
+      font-weight: 500;
+    }
+
+    .btn-tech:hover {
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+      color: #ffffff;
+      transform: translateY(-2px);
     }
 
     /* ===== CARDS ===== */
@@ -103,78 +121,4 @@
       margin-top: 4rem;
       padding: 2rem 0;
       text-align: center;
-      font-size: 0.9rem;
-      color: #94a3b8;
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container fade-in">
-      <h1>🚀 Ciao, I'm Francesco</h1>
-      <p>
-        Computer Science graduate from <strong>UNICAL</strong> 🎓💻<br>
-        Passionate about technology and innovation 🚀<br>
-        On this GitHub profile you’ll find my projects, experiments,
-        and contributions to the open-source community 🌍✨
-      </p>
-
-      <div class="mt-4">
-        <a href="https://www.linkedin.com/in/francesco-morrone-189b9a232/" class="btn btn-dark mr-2">LinkedIn</a>
-        <a href="https://github.com/morr-one" class="btn btn-outline-light">GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOCUS AREAS -->
-  <section class="container py-5">
-    <h2 class="text-center mb-5 fade-in delay-1">Focus Areas</h2>
-
-    <div class="row">
-
-      <div class="col-md-4 mb-4 fade-in delay-1">
-        <div class="tech-card text-center">
-          <div class="tech-icon">☁️</div>
-          <h4>Cloud Computing</h4>
-          <p>
-            Designing scalable, resilient and distributed systems
-            using modern cloud technologies.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4 fade-in delay-2">
-        <div class="tech-card text-center">
-          <div class="tech-icon">🔐</div>
-          <h4>Cybersecurity</h4>
-          <p>
-            Security-first mindset, vulnerability analysis
-            and secure system design.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4 fade-in delay-3">
-        <div class="tech-card text-center">
-          <div class="tech-icon">🤖</div>
-          <h4>Artificial Intelligence</h4>
-          <p>
-            Exploring machine learning, data-driven solutions
-            and intelligent systems.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    © 2026 — Francesco Morrone · Built with passion & curiosity 💙
-  </footer>
-
-</body>
-</html>
+      font-size: 0.9rem
