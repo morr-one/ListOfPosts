@@ -78,6 +78,30 @@ canvas.addEventListener('mousemove', (e) => {
     mouseX = Math.max(PLAYER_W / 2, Math.min(W - PLAYER_W / 2, mouseX));
 });
 
+// ── Gestione tocco (mobile) ──
+canvas.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    const touch = e.touches[0];
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = W / rect.width;
+    mouseX = (touch.clientX - rect.left) * scaleX;
+    mouseX = Math.max(PLAYER_W / 2, Math.min(W - PLAYER_W / 2, mouseX));
+    mouseInside = true;
+});
+canvas.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+    const touch = e.touches[0];
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = W / rect.width;
+    mouseX = (touch.clientX - rect.left) * scaleX;
+    mouseX = Math.max(PLAYER_W / 2, Math.min(W - PLAYER_W / 2, mouseX));
+    mouseInside = true;
+});
+canvas.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    mouseInside = false;
+});
+
 // ── Disegna navicella ──
 function drawPlayer() {
     const px = player.x;
