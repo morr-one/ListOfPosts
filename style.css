@@ -288,6 +288,38 @@ main > .container + .container {
     color: #e4e4ed;
 }
 
+/* ---- Space Invaders ---- */
+
+.game-section {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#gameCanvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    border-radius: 12px;
+    border: 1px solid #1e1e2e;
+    background: #07070b;
+    cursor: none;
+}
+
+.game-score {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #00d4ff;
+    font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', monospace;
+}
+
 /* ---- Responsive ---- */
 
 @media (max-width: 640px) {
